@@ -1,0 +1,17 @@
+#include<stdio.h>
+main()
+{ int i;
+int total_marks[]={83,86,97,95,93,95,86,52,49,90,42,47,90,59,63,86,40,46,92,56,51,48,90,49,42,90,42,83,47,95,69,82,58,69,67,53,56,71,62},
+ marks_count[101];
+for(i=0;i<101;i++){
+marks_count[i]=0;
+}
+for(i=0;i<40;i++){
+marks_count[total_marks[i]]++;
+}
+for(i=50;i<=100;i++)
+{
+printf("marks:%d count:%d\n",i,marks_count[i]);
+}
+return 0;
+}

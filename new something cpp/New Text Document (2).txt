@@ -1,0 +1,23 @@
+ImageView imageView2= (ImageView) findViewById(R.id.imageView2);
+        Animation animation= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.welcome_animation);
+        imageView2.setAnimation(animation);
+        animation.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                finish();
+                startActivity(new Intent(getApplicationContext(),first.class));
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
+
+    }
